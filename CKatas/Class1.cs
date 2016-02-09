@@ -2,13 +2,9 @@
 {
     public static long FindNextSquare(long num)
     {
-
-        // your code here
-        var x = System.Math.Pow(num, 1 / 3);
-        x = System.Math.Round(x);
-        if (System.Math.Pow(x, 3) == num)
+        if (System.Math.Sqrt(num) % 1 == 0D)
         {
-            return (long)System.Math.Pow(x + 1, 3);
+            return (long)System.Math.Pow(System.Math.Sqrt(num) + 1, 2);
         }
         else
         {
