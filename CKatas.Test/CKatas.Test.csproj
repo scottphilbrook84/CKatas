@@ -64,9 +64,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CodeWarsNextPerfectSqaure.cs" />
+    <Compile Include="GenericFunctionChainer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CKatas\CKatas.csproj">

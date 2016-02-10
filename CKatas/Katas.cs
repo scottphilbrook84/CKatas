@@ -1,4 +1,7 @@
-﻿public class Kata
+﻿using System;
+using System.Linq;
+
+public class Kata
 {
     public static long FindNextSquare(long num)
     {
@@ -12,4 +15,11 @@
 
         }
     }
+
+    public static double Chain(double input, Func<double, double>[] fs)
+    {
+        fs.ToList().ForEach(x=> input = x.Invoke(input));
+        return input;
+    }
+
 }
