@@ -68,6 +68,7 @@
     <Compile Include="CodeWarsNextPerfectSqaure.cs" />
     <Compile Include="GenericFunctionChainer.cs" />
     <Compile Include="HowMany2s.cs" />
+    <Compile Include="EmailObfuscate.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CKatas\CKatas.csproj">
