@@ -78,3 +78,16 @@ public class TwistedSum
         return sum;
     }
 }
+
+public class PlayPass
+{
+
+    public static string playPass(string s, int n)
+    {
+        return new string(s.ToCharArray()
+                           .Select(x => Char.IsLetter(x) ? (char)((int)x + n > 90 ? (int)x + n - 26 : (int)x + n) : (Char.IsDigit(x) ? Char.Parse((9 - int.Parse(x.ToString())).ToString()) : (char)x))
+                           .Select((x, i) => i % 2 == 1 ? (Char.IsLetter(x) ? Char.ToLower(x) : x) : x)
+                           .Reverse()
+                           .ToArray());
+    }
+}

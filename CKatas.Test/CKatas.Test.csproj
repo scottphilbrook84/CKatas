@@ -70,6 +70,7 @@
     <Compile Include="HowMany2s.cs" />
     <Compile Include="EmailObfuscate.cs" />
     <Compile Include="TwistedSum.cs" />
+    <Compile Include="PlayPassTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CKatas\CKatas.csproj">
